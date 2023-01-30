@@ -1,0 +1,636 @@
+/* import myBanner from "/images/pexels-pixabay-270736.jpg" */
+
+
+
+:root {
+  --primary_color: #042743;
+  --secondary_color: #24aae0;
+  --white: #fff;
+}
+
+.badges {
+  background-color: var(--secondary_color);
+  color: var(--white);
+}
+
+.secondary_btn {
+  background-color: var(--primary_color) !important;
+  color: var(--white);
+}
+
+.section_headings {
+  color: var(--primary_color);
+}
+
+.how_itworks {
+  background: var(--primary_color);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: var(--secondary_color);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blank {
+  color: rgb(32, 8, 246);
+}
+
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.564);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+.search_bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgb(255 255 255 / 56%);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search_bar input {
+  background-color: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.search_bar button .fa-search {
+  width: 23px;
+}
+
+.search_bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: var(--primary_color);
+  cursor: pointer;
+}
+
+.search-text:focus {
+  outline: none;
+}
+
+.white_text {
+  color: #F0F0F0;
+}
+
+.section-company-map span {
+  display: flex;
+  /* background-color:#283891; */
+  border: 1px solid #F0F0F0;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #c0c0c0;
+  justify-content: center;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rsm-geography:hover {
+  fill: var(--primary_color);
+}
+
+/* CSS for the maps component */
+.rsm-geography:focus {
+  outline: none;
+}
+
+.rsm-geography text:hover {
+  color: white !important;
+}
+
+/* CSS for the Categories component */
+.ctgrs .card:hover {
+  background: #ffffff !important;
+  color: #000 !important;
+  transition: 100ms;
+}
+
+.ctgrs .card {
+  background: #ffffff !important;
+  color: var(--primary_color);
+}
+
+Footer {
+  background-color: var(--primary_color);
+}
+
+.hr_footer {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+
+.bottom_txt {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer_text {
+  background-color: #7c4dff;
+}
+
+.footer_text p {
+  font-size: 14px;
+  background-color: #7c4dff;
+}
+
+.featured_image {
+  height: unset;
+  aspect-ratio: 1;
+}
+
+@media (max-width:768px) {
+  .featured_image {
+    height: 100%;
+    aspect-ratio: 1;
+  }
+}
+
+@media (max-width:1440px) {
+  .featured_image {
+    height: 100%;
+    aspect-ratio: 1;
+  }
+}
+
+.ctrgpg .card-text,
+.canada .card-text,
+.blogs .card-text {
+  margin: 20px 20px 20px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+a {
+  text-decoration: none;
+}
+
+.black-overlay {
+  width: 100%;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #00000073;
+  border-radius: 16px;
+}
+
+.bg-overlay {
+  position: relative;
+  margin: auto;
+  height: 630px;
+}
+
+.bg-img {
+  background-image: url('https://images.pexels.com/photos/8940499/pexels-photo-8940499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 16px;
+  background-position: center;
+}
+
+.react-tabs {
+  display: flex;
+  margin-left: 36px;
+  width: 470px;
+  height: 400px;
+  border: 1px solid #3c3e43;
+  color: white;
+  background: #1c1d1f;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #3c3e43;
+}
+
+.react-tabs__tab {
+  height: 70px;
+  list-style: none;
+  padding: 12px 6px;
+  cursor: pointer;
+  color: #bbb;
+}
+
+.react-tabs__tab--selected {
+  background: #1c1d1f;
+  border-color: #1c1d1f;
+  border-left: 4px solid #6eb800;
+  color: white;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  width: 300px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 21px;
+}
+
+.panel-content {
+  text-align: center;
+}
+
+.tab_button_group {
+  justify-content: space-around !important;
+}
+
+
+.usa_button,
+.Canada_button {
+  border: none;
+
+
+}
+
+/* CSS for the canada map */
+
+#BC #British\ Columbia:hover {
+  fill: #283891 !important;
+}
+
+#AB #Alberta:hover {
+  fill: #283891 !important;
+}
+
+#SK #Saskatchewan:hover {
+  fill: #283891 !important;
+}
+
+#MB #Manitoba:hover {
+  fill: #283891 !important;
+}
+
+#NL #Newfoundland\ and\ Labrador:hover {
+  fill: #283891 !important;
+}
+
+#NB #New\ Brunswick:hover {
+  fill: #283891 !important;
+}
+
+#ON #Ontario:hover {
+  fill: #283891 !important;
+}
+
+#QC #Quebec:hover {
+  fill: #283891 !important;
+}
+
+#NS #Nova\ Scotia:hover {
+  fill: #283891 !important;
+}
+
+#YT #Yukon\ Territories:hover {
+  fill: #283891 !important;
+}
+
+#NT #Northwest\ Territories:hover {
+  fill: #283891 !important;
+}
+
+#NU #Nunavut:hover {
+  fill: #283891 !important;
+
+}
+
+#PE #Prince\ Edward\ Island:hover {
+  fill: #283891 !important;
+
+}
+
+#PE #Prince\ Edward\ Island {
+  fill: #DDDDDD !important;
+
+}
+
+#ON #Ontario {
+  fill: #DDDDDD !important;
+}
+
+#NB #New\ Brunswick {
+  fill: #DDDDDD !important;
+}
+
+#BC #British\ Columbia {
+  fill: #DDDDDD !important;
+}
+
+#AB #Alberta {
+  fill: #DDDDDD !important;
+}
+
+#SK #Saskatchewan {
+  fill: #DDDDDD !important;
+}
+
+#MB #Manitoba {
+  fill: #DDDDDD !important;
+}
+
+#NL #Newfoundland\ and\ Labrador {
+  fill: #DDDDDD !important;
+}
+
+#NB #New\ Brunswick {
+  fill: #DDDDDD !important;
+}
+
+#ON #Ontario {
+  fill: #DDDDDD !important;
+}
+
+#QC #Quebec {
+  fill: #DDDDDD !important;
+}
+
+#NS #Nova\ Scotia {
+  fill: #DDDDDD !important;
+}
+
+#YT #Yukon\ Territories {
+  fill: #DDDDDD !important;
+}
+
+#NT #Northwest\ Territories {
+  fill: #DDDDDD !important;
+}
+
+#NU #Nunavut {
+  fill: #DDDDDD !important;
+
+}
+
+#PE #Prince\ Edward\ Island:hover {
+  fill: #283891 !important;
+
+}
+
+@media(max-width:1024px) {
+  svg.canada-map {
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media (max-width:768px) {
+  svg.canada-map {
+    width: 700px;
+    height: 50%;
+  }
+}
+
+
+
+@media(max-width:320px) {
+  .search_bar input {
+    padding: 0;
+    max-width: 95%;
+
+  }
+
+}
+
+
+@media(max-width:767px) {
+  .search_bar {
+    margin-bottom: 20px;
+
+  }
+}
+
+
+@media(min-width:1024px) {
+  .logo {
+    width: 200px !important;
+  }
+}
+
+button.active img {
+  border: 3px solid #283891;
+  border-radius: 50%;
+
+}
+
+.maps_background {
+  background-color: #04274308;
+}
+
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #0e3d63;
+}
+
+/* Searchbar for the places pages heder  */
+
+#searchBox {
+  border-radius: 55px;
+  background-color: #f0f3ff;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1 rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+input {
+  font-size: 20px;
+  width: 500px;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+
+#icon {
+  width: 50px;
+  cursor: pointer;
+}
+
+#secondIcond {
+  width: 70px;
+}
+
+.create_accout_button {
+  border: 2px solid var(--white);
+  color: var(--white);
+
+}
+
+.right_section_con li::marker {
+  content: "";
+
+}
+
+.Active_tab {
+  border-bottom: 3px solid var(--primary_color);
+  padding: 7px 10px;
+  max-width: 200px;
+  width: 50%;
+  margin: 10px;
+  cursor: auto;
+  /* color:white !important; */
+}
+
+.Active_content {
+  display: block;
+}
+
+.tab_hidden {
+  display: none;
+}
+
+.nav-item a.tab {
+  padding: 7px 10px;
+  margin: 10px;
+  color: #3c3e43;
+}
+
+.tab_bar {
+  margin: 10px;
+
+}
+
+.tab_bar a {
+  color: rgb(0, 0, 0);
+
+}
+
+ul.itenary {
+  padding-inline-start: unset;
+}
+
+
+
+.tabs_itms {
+  display: inline-flex;
+}
+
+.tabs_itms li {
+  list-style-type: none;
+}
+
+.card-header {
+  background-color: transparent;
+}
+
+
+/* .tabs_it {
+   
+    padding:5px 10px;
+    border-radius:10px;
+    margin:auto 10px;
+} */
+
+
+.user {
+  background-color: red;
+  display: flex;
+
+}
+.user p {
+  display: block;
+  background: white;
+  color: #000;}
+  
+.labeling {
+  color:white !important;
+}
+
+
+.main-app {
+  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  
+ }
+
+ .main-app.m-auto {
+  position: absolute;
+  background: #042743;
+  top: 71%;
+  left: 10%;
+  width: 80%;
+  padding:20px auto;
+  list-style-type:none;
+}
+.search_list {
+  list-style-type:none;
+
+}
